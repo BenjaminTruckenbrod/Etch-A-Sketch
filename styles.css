@@ -1,0 +1,30 @@
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+  }
+  
+  #container {
+    display: grid;
+    /* grid-gap: 1em; */
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+  }
+  
+  .grid-item {
+    padding: 1em;
+    border: 1px solid rgb(0, 0, 0);
+    text-align: center;
+    /* transition: background-color .4s ease-out; */
+  }
+
+  /* .grid-item:hover {
+    background-color: orange;
+    /* transition-property: 'background-color';
+    transition-duration: 4s ease-out;
+    transition: .5s ease-out; */
+    
+  }
+
+  .grid-item:not(:hover){
+    transition: background-color 1s;
+  } */
